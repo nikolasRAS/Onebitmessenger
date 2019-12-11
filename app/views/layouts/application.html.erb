@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-background-black-ter has-text-white-ter">
   <head>
     <title>OneBitMessenger</title>
     <%= csrf_meta_tags %>
@@ -35,10 +35,15 @@
       <%= render "layouts/sidebar" %>
     </nav>
 
-     <section class="section">
-       <div class="container">
-         <%= yield %>
-       </div>
-     </div>
+    <section class="section">
+      <div class="container">
+        <% if alert %>
+          <div class="notification is-danger"><%= alert %></div>
+        <% elsif notice %>
+          <div class="notification is-success"><%= notice %></div>
+        <% end %>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
