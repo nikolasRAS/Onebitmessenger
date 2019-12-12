@@ -11,25 +11,25 @@
   </head>
 
   <body>
-    <nav class ="navbar has-background-grey-dark has-text-white-ter">
+    <nav class="navbar has-background-grey-dark has-text-white-ter">
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item has-text-white-ter">
-	    <%= image_tag "Logo-menu.png" %>
-	  </div>
+            <%= image_tag "Logo-menu.png" %>
+          </div>
 
-	  <div class= "navbar-burguer burguer has-text-white-ter" data-show="quickview" data-target="left-sidebar">
-	    <span></span>
-	    <span></span>
-	    <span></span>
-	  </div>
+          <div class="navbar-burger burger has-text-white-ter" data-show="quickview" data-target="left-sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 	</div>
 
-	<div class="navbar-burguer burguer has-text-thite-ter desktop-burguer is-hiden-touch" data-show="quickview" data-target="left-sidebar">
-	  <span></span>
-	  <span></span>
-	  <span></span>
-	</div>
+        <div class="navbar-burger burger has-text-white-ter desktop-burger is-hidden-touch" data-show="quickview" data-target="left-sidebar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
       <%= render "layouts/sidebar" %>
